@@ -1,0 +1,19 @@
+import { describe, expect, test } from "vitest";
+import { screen } from "@testing-library/react";
+import { renderWithUser } from "@/utils/tests/renderWithUser";
+import { {{ pascalCase name}} } from "@/app/components/{{ type }}s/{{pascalCase name}}";
+
+describe("<{{ pascalCase name }} />", () => {
+  test("that clicking the button increases the counter", async () => {
+    const { user } = renderWithUser(<{{ pascalCase name }} />);
+    const component = screen.getByRole("button", {
+      name: /you clicked this button this many times: 0/i,
+    });
+    expect(component).toBeInTheDocument();
+    await user.click(component);
+    const updatedComponent = screen.getByRole("button", {
+      name: /you clicked this button this many times: 1/i,
+    });
+    expect(updatedComponent).toBeInTheDocument();
+  });
+});
