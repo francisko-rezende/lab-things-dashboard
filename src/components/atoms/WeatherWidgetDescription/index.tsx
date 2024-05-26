@@ -1,0 +1,1 @@
+export { WeatherWidgetDescription } from "./WeatherWidgetDescription";
