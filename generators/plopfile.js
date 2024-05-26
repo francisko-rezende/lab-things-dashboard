@@ -17,22 +17,22 @@ module.exports = (plop) => {
     actions: [
       {
         type: "add",
-        path: "../src/app/components/{{ type }}s/{{ pascalCase name }}/index.tsx",
+        path: "../src/components/{{ type }}s/{{ pascalCase name }}/index.tsx",
         templateFile: "templates/index.ts.hbs",
       },
       {
         type: "add",
-        path: "../src/app/components/{{ type }}s/{{ pascalCase name }}/{{ pascalCase name }}.tsx",
+        path: "../src/components/{{ type }}s/{{ pascalCase name }}/{{ pascalCase name }}.tsx",
         templateFile: "templates/Component.tsx.hbs",
       },
       {
         type: "add",
-        path: "../src/app/components/{{ type }}s/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
+        path: "../src/components/{{ type }}s/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
         templateFile: "templates/Component.stories.tsx.hbs",
       },
       {
         type: "add",
-        path: "../src/app/components/{{ type }}s/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
+        path: "../src/components/{{ type }}s/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
         templateFile: "templates/Component.test.tsx.hbs",
       },
     ],
